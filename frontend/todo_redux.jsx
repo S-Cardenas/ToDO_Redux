@@ -6,15 +6,8 @@ import Root from './components/root.jsx';
 
 
 
-// const Trial = () => {
-//   return (
-//     <div>
-//       Hello World
-//     </div>
-//   );
-// };
-
 document.addEventListener("DOMContentLoaded", function() {
   const store = configureStore();
+  window.store = store;
   ReactDOM.render(<Root store={store}/>, document.getElementById('content'));
 });
